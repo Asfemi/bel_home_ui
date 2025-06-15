@@ -1,7 +1,7 @@
 import 'package:bel_home_ui/app/view/styles/styles.dart';
 import 'package:bel_home_ui/core/extensions/extensions.dart';
 import 'package:bel_home_ui/features/home/presentation/widget/widgets.dart';
-import 'package:bel_home_ui/features/home/presentation/data/data.dart';
+import 'package:bel_home_ui/features/home/data/data.dart';
 import 'package:bel_home_ui/features/home/presentation/state/state.dart';
 import 'package:bel_home_ui/features/drawer/presentation/view/side_menu.dart';
 import 'package:flutter/material.dart';

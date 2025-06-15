@@ -14,7 +14,7 @@ class BannerData {
           'Pay bills & airtime, buy gift cards,\nget latest updates and more...',
       'imagePath': Assets.images.comingsoon.path,
       'withIcon': true,
-      'iconPath': Assets.icons.swap3,
+      'iconPath': Assets.icons.explore,
       'buttonColor': AppColors.secoundaryColour,
       'buttonTextColor': AppColors.primaryColour,
     },

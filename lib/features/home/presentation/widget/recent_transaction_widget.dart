@@ -2,9 +2,9 @@ import 'package:bel_home_ui/app/view/styles/app_colors.dart';
 import 'package:bel_home_ui/app/view/widgets/svg.dart';
 import 'package:bel_home_ui/core/extensions/context_extensions.dart';
 import 'package:bel_home_ui/core/extensions/widget_extensions.dart';
+import 'package:bel_home_ui/features/home/data/transaction_data.dart';
 import 'package:bel_home_ui/features/home/presentation/widget/app_navbar.dart';
 import 'package:bel_home_ui/gen/fonts.gen.dart';
-import 'package:bel_home_ui/features/home/presentation/data/transaction_data.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gap/gap.dart';
@@ -121,7 +121,7 @@ class RecentTransactionWidget extends StatelessWidget {
                           transaction['amount'],
                           style: TextStyle(
                             fontSize: 14.sp,
-                            fontWeight: FontWeight.w600,
+                            fontWeight: FontWeight.w500,
                             color: AppColors.primaryTextColour,
                             fontFamily: FontFamily.montserrat,
                           ),

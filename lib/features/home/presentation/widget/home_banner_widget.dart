@@ -1,6 +1,6 @@
 import 'package:bel_home_ui/app/view/styles/app_colors.dart';
 import 'package:bel_home_ui/features/home/presentation/widget/banner_widget.dart';
-import 'package:bel_home_ui/features/home/presentation/data/banner_data.dart';
+import 'package:bel_home_ui/features/home/data/banner_data.dart';
 import 'package:bel_home_ui/features/home/presentation/state/banner_state.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
