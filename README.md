@@ -13,7 +13,7 @@ A Flutter mobile application implementing the home screen design from the provid
 
 1. Clone the repository:
 ```bash
-git clone [repo-url]
+git clone [https://github.com/Asfemi/bel_home_ui]
 cd bel_home_ui
 ```
 
