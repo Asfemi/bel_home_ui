@@ -49,6 +49,11 @@ flutter pub get
   - `features/` - Feature-specific code
   - `app/` - App-wide widgets and configurations
 
+##debug builds
+- 'builds/'
+  - 'android/' - contains the android bundle
+  - 'ios/' - contains the ios bundle
+
 ## Notes
 - This is a debug build as per assessment requirements
 - Animations have been implemented to enhance user experience
