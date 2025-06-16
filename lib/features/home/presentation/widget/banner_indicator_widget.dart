@@ -22,15 +22,15 @@ class BannerIndicatorWidget extends StatelessWidget {
         return GestureDetector(
           onTap: () => onDotTapped(index),
           child: Container(
-            width: 8.w,
-            height: 8.h,
+            width: currentIndex == index ? 25.w : 5.w,
+            height: 5.h,
             margin: EdgeInsets.symmetric(horizontal: 4.w),
             decoration: BoxDecoration(
-              shape: BoxShape.circle,
+              borderRadius: BorderRadius.circular(4.r),
               color:
                   currentIndex == index
-                      ? AppColors.primaryColour
-                      : AppColors.primaryColour.withValues(alpha: 0.3),
+                      ? AppColors.whiteBackgroundColour
+                      : AppColors.iconGreyColour.withValues(alpha: 0.5),
             ),
           ),
         );

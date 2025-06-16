@@ -42,6 +42,7 @@ class _HomeBannerWidgetState extends State<HomeBannerWidget> {
         autoPlayAnimationDuration: const Duration(milliseconds: 800),
         autoPlayCurve: Curves.fastOutSlowIn,
         enlargeCenterPage: false,
+        showIndicator: false,
         onPageChanged: (index, reason) {
           widget.bannerState.updateIndex(index);
         },

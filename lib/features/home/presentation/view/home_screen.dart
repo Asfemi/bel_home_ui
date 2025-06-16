@@ -31,41 +31,39 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       key: _scaffoldKey,
       backgroundColor: AppColors.primaryColour,
-      appBar: HomeAppBar(
-        onMenuPressed: () {
-          _scaffoldKey.currentState?.openDrawer();
-        },
-      ),
       drawer: const SideMenu(),
-      body: Stack(
+      body: Column(
         children: [
+          Gap(32),
+          HomeAppBar(
+            onMenuPressed: () {
+              _scaffoldKey.currentState?.openDrawer();
+            },
+          ),
+          Gap(24),
           Column(
             children: [
               BalanceCard(),
               Gap(16.h),
               HomeBannerWidget(bannerState: _bannerState),
+              Gap(9.h),
+              ListenableBuilder(
+                listenable: _bannerState,
+                builder: (context, _) {
+                  return BannerIndicatorWidget(
+                    itemCount: BannerData.banners.length,
+                    currentIndex: _bannerState.currentIndex,
+                    onDotTapped: (index) {
+                      // You can add carousel controller here if needed
+                    },
+                  );
+                },
+              ),
+              Gap(9.h),
             ],
           ).withSymmetricPadding(horizontal: 24.w),
-          Positioned(
-            bottom: context.screenHeight * 0.47,
-            right: context.screenWidth * 0.5,
-            child: ListenableBuilder(
-              listenable: _bannerState,
-              builder: (context, _) {
-                return BannerIndicatorWidget(
-                  itemCount: BannerData.banners.length,
-                  currentIndex: _bannerState.currentIndex,
-                  onDotTapped: (index) {
-                    // You can add carousel controller here if needed
-                  },
-                );
-              },
-            ),
-          ),
-          Positioned(
-            bottom: 0,
-            left: 0,
-            right: 0,
+
+          Expanded(
             child: RecentTransactionWidget()
                 .animate()
                 .slide(
